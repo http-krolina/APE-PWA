@@ -5,9 +5,9 @@ const urlsToCache = [
   "/style.css",
   "/script.js",
   "/manifest.json",
-  "/logo_Brasil.png",
-  "/icons/APE-192.png",
-  "/icons/APE-512.png",
+  "/APES.png",
+  "/icons/APES-192.png",
+  "/icons/APES-512.png",
 ];
 
 self.addEventListener("install", (event) => {
