@@ -34,41 +34,10 @@ body {
   margin-top: 9rem;
 }
 
-#geoBtn {
-  padding: flex;
+#Pesq {
   display: flex;
-  left: 20px;
-  top: 9%;
-  font-size: 1rem;
-  border-radius: 3rem;
-  border: none;
-  width: 15rem;
-  height: 3rem;
-  flex-shrink: 0;
-  background-color: #051f20;
-  color: #fffcfc;
-  font-weight: bold;
-}
-
-#geoBtn:hover {
-  background-color: #daf1de;
-  border: 0.2rem solid #000;
-  border-radius: 3rem;
-  color: #000;
-}
-
-#searchBtn {
-  padding: 8px 14px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  background-color: #daf1de;
-  color: #000;
-  font-weight: bold;
-  margin-left: 8px;
-}
-#search {
-  padding: 8px 14px;
+  align-items: start;
+  padding: 1rem 5rem;
   border-radius: 25px;
   border: none;
   cursor: pointer;
@@ -76,4 +45,42 @@ body {
   color: #000000;
   font-weight: bold;
   margin-left: 8px;
+}
+
+#PesqBtn {
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #daf1de;
+  color: #000;
+  font-weight: bold;
+  margin-left: 7px;
+  margin-top: 1rem;
+}
+
+#PesqBtn:hover {
+  background-color: #daf1de;
+  border: 0.2rem solid #000;
+  border-radius: 3rem;
+  color: #000;
+}
+
+#LocBtn {
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #daf1de;
+  color: #000;
+  font-weight: bold;
+  margin-left: 7px;
+  margin-top: 1rem;
+}
+
+#geoBtn:hover {
+  background-color: #daf1de;
+  border: 0.2rem solid #000;
+  border-radius: 3rem;
+  color: #000;
 }
