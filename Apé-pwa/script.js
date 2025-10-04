@@ -79,10 +79,14 @@ document.getElementById("LocBtn").onclick = async () => {
   try {
     const u = await getUserLocation();
     result.innerHTML = `
-      <h2>Localização atual</h2>
-      <p><b>Latitude:</b> ${u.latitude}</p>
-      <p><b>Longitude:</b> ${u.longitude}</p>
-      <a class="VerMaps" href="https://www.google.com/maps?q=${u.latitude},${u.longitude}" target="_blank">Ver no Google Maps</a>`;
+    <div class="info-block">
+        <h2 class="location-title">Localização Atual</h2>
+        <p><b class="location-label">Latitude:</b> <span class="location-data">${u.latitude}</span></p>
+        <p><b class="location-label">Longitude:</b> <span class="location-data">${u.longitude}</span></p>
+
+        <a class="VerMaps" href="http://googleusercontent.com/maps.google.com/?q=${u.latitude},${u.longitude}" target="_blank">Ver no Google Maps</a>
+    </div>
+  `;
   } catch {
     alert("Não foi possível obter sua localização.");
   }
