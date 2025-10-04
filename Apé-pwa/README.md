@@ -1,4 +1,4 @@
-# APÉ - Explorador de Rotas e Locais do Brasil
+# APÉ - Explorador de Rotas e Locais
 
 ![Logo do APÉ](icons/APES.PNG)
 
