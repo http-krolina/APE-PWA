@@ -59,13 +59,20 @@ document.getElementById("PesqBtn").onclick = async () => {
   );
   const wikiHTML = await getWikiInfo(q);
 
+  // Supondo que 'result' seja o seu container principal, ex: const result = document.getElementById('resultado-div');
   result.innerHTML = `
-    <h2>Informações</h2>
-    <p><b>Sua localização:</b> ${user.latitude}, ${user.longitude}</p>
-    <p><b>Local pesquisado:</b> ${place.lat}, ${place.lon}</p>
-    <p><b>Distância:</b> ${dist} km</p>
-    <a class="VerRota" href="https://www.google.com/maps/dir/${user.latitude},${user.longitude}/${place.lat},${place.lon}" target="_blank">Ver rota</a>
-    ${wikiHTML}`;
+    <div class="info-block">
+        <h2 class="info-title">Informações</h2>
+        <p><b class="info-label">Sua localização:</b> <span class="info-data">${user.latitude}, ${user.longitude}</span></p>
+        <p><b class="info-label">Local pesquisado:</b> <span class="info-data">${place.lat}, ${place.lon}</span></p>
+        <p><b class="info-label">Distância:</b> <span class="info-data">${dist} km</span></p>
+        <a class="VerRota" href="https://www.google.com/maps/dir/?api=1&origin=${user.latitude},${user.longitude}&destination=${place.lat},${place.lon}" target="_blank">Ver rota no mapa</a>
+    </div>
+
+    <div class="conteudo-wiki">
+        ${wikiHTML}
+    </div>
+`;
 };
 
 document.getElementById("LocBtn").onclick = async () => {
