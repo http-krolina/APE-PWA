@@ -8,20 +8,22 @@ body {
 
 .div1 {
   padding: flex;
+  display: flex;
   background-color: #daf1de;
   padding: 0.7rem 0;
-  display: flex;
+
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 2370px;
+  left: -15px;
 }
 
 .logo {
   padding: flex;
   justify-items: center;
   align-items: center;
-  border-radius: 90%;
+  border-radius: 50%;
   width: 70px;
   height: 70px;
   object-fit: cover;

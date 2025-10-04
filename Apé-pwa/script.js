@@ -43,8 +43,8 @@ const getPlaceCoords = async (q) => {
   return d[0] ? { lat: +d[0].lat, lon: +d[0].lon } : null;
 };
 
-document.getElementById("searchBtn").onclick = async () => {
-  const q = document.getElementById("search").value.trim();
+document.getElementById("PesqBtn").onclick = async () => {
+  const q = document.getElementById("Pesq").value.trim();
   if (!q) return alert("Digite um local!");
 
   const user = await getUserLocation();
@@ -68,7 +68,7 @@ document.getElementById("searchBtn").onclick = async () => {
     <hr>${wikiHTML}`;
 };
 
-document.getElementById("geoBtn").onclick = async () => {
+document.getElementById("LocBtn").onclick = async () => {
   try {
     const u = await getUserLocation();
     result.innerHTML = `
