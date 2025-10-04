@@ -64,8 +64,8 @@ document.getElementById("PesqBtn").onclick = async () => {
     <p><b>Sua localização:</b> ${user.latitude}, ${user.longitude}</p>
     <p><b>Local pesquisado:</b> ${place.lat}, ${place.lon}</p>
     <p><b>Distância:</b> ${dist} km</p>
-    <a href="https://www.google.com/maps/dir/${user.latitude},${user.longitude}/${place.lat},${place.lon}" target="_blank">Ver rota 🚗</a>
-    <hr>${wikiHTML}`;
+    <a class="VerRota" href="https://www.google.com/maps/dir/${user.latitude},${user.longitude}/${place.lat},${place.lon}" target="_blank">Ver rota</a>
+    ${wikiHTML}`;
 };
 
 document.getElementById("LocBtn").onclick = async () => {
@@ -75,7 +75,7 @@ document.getElementById("LocBtn").onclick = async () => {
       <h2>Localização atual</h2>
       <p><b>Latitude:</b> ${u.latitude}</p>
       <p><b>Longitude:</b> ${u.longitude}</p>
-      <a href="https://www.google.com/maps?q=${u.latitude},${u.longitude}" target="_blank">Ver no Google Maps</a>`;
+      <a class="VerMaps" href="https://www.google.com/maps?q=${u.latitude},${u.longitude}" target="_blank">Ver no Google Maps</a>`;
   } catch {
     alert("Não foi possível obter sua localização.");
   }
