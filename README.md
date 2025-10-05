@@ -12,24 +12,22 @@ Um Progressive Web App (PWA) interativo para explorar locais, calcular distânci
 
 A aplicação foi desenhada para ser rápida, responsiva e, como um bom PWA, instalável em dispositivos móveis, oferecendo uma experiência similar a um aplicativo nativo.
 
-## Funcionalidades
-
-- 📍 **Localização atual:** mostra latitude, longitude e link para ver no Google Maps.
-- 🔎 **Pesquisa locais:**
-  - Pega a posição do usuário.
-  - Busca coordenadas do local pesquisado usando **Nominatim (OpenStreetMap)**.
-  - Calcula a **distância** entre o usuário e o local pesquisado.
-  - Mostra resumo e imagem do local usando a **API da Wikipédia**.
-  - Link direto para ver a **rota no Google Maps**.
-
----
-
 ## Tecnologias
 
 - HTML, CSS, JavaScript
 - **PWA** (Progressive Web App)
-- API de geolocalização do navegador
 - **Wikipédia REST API** (`https://pt.wikipedia.org/api/rest_v1/page/summary/`)
 - **Nominatim OpenStreetMap API** (`https://nominatim.openstreetmap.org`)
+
+---
+
+## Funcionalidades
+
+- **Localização atual:** mostra latitude, longitude e link para ver no Google Maps.
+- **Pesquisa locais:**
+- Obtém as coordenadas de um local pesquisado usando a API Nominatim (OpenStreetMap).
+- Calcula a distância em linha reta entre o usuário e o destino.
+- Exibe um resumo e uma imagem do local, consultando a API da Wikipédia.
+- Gera um link para visualizar a rota no Google Maps.
 
 ---
