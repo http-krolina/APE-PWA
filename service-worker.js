@@ -1,4 +1,4 @@
-const CACHE_NAME = "descubra-locais-v2";
+const CACHE_NAME = "ape-pwa-cache-v1";
 const urlsToCache = [
   "/",
   "/index.html",

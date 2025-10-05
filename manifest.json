@@ -1,11 +1,11 @@
 {
-  "name": "Descubrir locais",
-  "short_name": "Recife",
+  "name": "APÉ - Explorador de Rotas",
+  "short_name": "APÉ",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "description": "Aplicativo para descobrir informações sobre locais em Recife.",
+  "description": "Aplicativo para explorar Rotas.",
   "icons": [
     {
       "src": "icons/APES-192.png",
