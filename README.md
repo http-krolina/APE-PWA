@@ -14,8 +14,8 @@ A aplicação foi desenhada para ser rápida, responsiva e, como um bom PWA, ins
 
 ## Funcionalidades
 
-- 📍 **Minha Localização:** mostra latitude, longitude e link para ver no Google Maps.
-- 🔎 **Pesquisar Local:**
+- 📍 **Localização atual:** mostra latitude, longitude e link para ver no Google Maps.
+- 🔎 **Pesquisa locais:**
   - Pega a posição do usuário.
   - Busca coordenadas do local pesquisado usando **Nominatim (OpenStreetMap)**.
   - Calcula a **distância** entre o usuário e o local pesquisado.
