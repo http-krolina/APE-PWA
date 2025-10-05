@@ -1,6 +1,6 @@
 # APÉ - Explorador de Rotas e Locais
 
-![Logo do APÉ](icons/APES.PNG)
+![Logo do APÉ](icons/APES.png)
 
 Um Progressive Web App (PWA) interativo para explorar locais, calcular distâncias e descobrir as melhores rotas, combinando Geolocalização e informações da Wikipédia.
 
